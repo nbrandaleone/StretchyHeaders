@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2rO-VE-GuG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ztH-GR-9Yo">
+            <objects>
+                <tableViewController id="2rO-VE-GuG" customClass="ViewController" customModule="StretchyHeaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dYh-eW-iXA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="DJE-zT-3Tw">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sh-bg-header" translatesAutoresizingMaskIntoConstraints="NO" id="VDm-K2-In7">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 24" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRo-oK-oyf">
+                                    <rect key="frame" x="20" y="20" width="160" height="29"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="VDm-K2-In7" firstAttribute="top" secondItem="DJE-zT-3Tw" secondAttribute="top" id="KLr-iu-OeL"/>
+                                <constraint firstItem="VDm-K2-In7" firstAttribute="leading" secondItem="DJE-zT-3Tw" secondAttribute="leading" id="KMR-0v-oUX"/>
+                                <constraint firstItem="JRo-oK-oyf" firstAttribute="top" secondItem="DJE-zT-3Tw" secondAttribute="top" constant="20" id="PFn-5y-kGs"/>
+                                <constraint firstAttribute="trailing" secondItem="VDm-K2-In7" secondAttribute="trailing" id="RVG-Ys-8NI"/>
+                                <constraint firstAttribute="bottom" secondItem="VDm-K2-In7" secondAttribute="bottom" id="ej1-jp-fFO"/>
+                                <constraint firstItem="JRo-oK-oyf" firstAttribute="leading" secondItem="DJE-zT-3Tw" secondAttribute="leading" constant="20" id="hLy-hV-NQz"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="C3n-KO-fk6" customClass="NewsItemCell" customModule="StretchyHeaders">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C3n-KO-fk6" id="vbT-Ui-sfD">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dystopian films continue rule over box office with 'Maze Runner'" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukj-9B-LZe">
+                                            <rect key="frame" x="23" y="28" width="559" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="ntw-QV-mNh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="ntw-QV-mNh"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Entertainment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iU-Ji-E6O">
+                                            <rect key="frame" x="23" y="8" width="85" height="16"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8iU-Ji-E6O" firstAttribute="leading" secondItem="vbT-Ui-sfD" secondAttribute="leadingMargin" constant="15" id="I4t-q8-pdP"/>
+                                        <constraint firstItem="Ukj-9B-LZe" firstAttribute="leading" secondItem="vbT-Ui-sfD" secondAttribute="leadingMargin" constant="15" id="SJz-aH-w0C"/>
+                                        <constraint firstItem="8iU-Ji-E6O" firstAttribute="top" secondItem="vbT-Ui-sfD" secondAttribute="topMargin" id="btF-YR-WAf"/>
+                                        <constraint firstItem="Ukj-9B-LZe" firstAttribute="top" secondItem="8iU-Ji-E6O" secondAttribute="bottom" constant="4" id="dOo-iB-Qxn"/>
+                                        <constraint firstItem="Ukj-9B-LZe" firstAttribute="bottom" secondItem="vbT-Ui-sfD" secondAttribute="bottomMargin" constant="5" id="f7Z-g6-V15"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ukj-9B-LZe" secondAttribute="trailing" constant="10" id="py2-5J-cBZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryLabel" destination="8iU-Ji-E6O" id="nQ7-3R-lR3"/>
+                                    <outlet property="summaryLabel" destination="Ukj-9B-LZe" id="f1C-SM-kzn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2rO-VE-GuG" id="Ltq-75-Ixa"/>
+                            <outlet property="delegate" destination="2rO-VE-GuG" id="ja7-Hn-2n9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDN-wz-vPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sh-bg-header" width="1242" height="825"/>
+    </resources>
+</document>
